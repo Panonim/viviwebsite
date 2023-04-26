@@ -1,2 +1,2 @@
 # ViVi Bot Website
-ViVi bot official website
+Add bot to you'r server: https://vivibot.online/add
