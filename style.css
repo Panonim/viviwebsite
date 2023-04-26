@@ -25,6 +25,7 @@ position: relative;
   visibility: hidden;
 }
 button {
+	margin-left: 10px;
   position: relative;
   padding: 10px 20px;
   border-radius: 7px;
@@ -95,4 +96,18 @@ button:active {
   -webkit-transition: box-shadow 0.2s ease-in;
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
+}
+.button1 {
+left: 25%;
+  position: relative;
+  display: linear-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button2 {
+  left: 60%;
+  position: relative;
+  display: linear-block;
+  margin-left: auto;
+  margin-right: auto;
 }
