@@ -5,16 +5,22 @@ body {
 }
 
 .text1 {
-	 text-align: center;
-	 color: white;
+  text-align: center;
+  color: white;
+  font-size: 40px;
 }
+
 .text2 {
-	 text-align: center;
-	 color: white;
+ text-align: center;
+ color: white;
+ margin: 50px;
+ font-size: 30px;
 }
-.text3 {
-	 text-align: center;
-	 color: white;
+.text_end {
+ text-align: center;
+ color: white;
+ margin: 100px;
+ font-size: 50px;
 }
 
 .imagevivi {
