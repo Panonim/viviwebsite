@@ -43,6 +43,10 @@ position: relative;
   text-transform: uppercase;
   transition: 0.5s;
   transition-property: box-shadow;
+  @media screen {
+    margin: 40px;
+    height: 65px;
+  }
 }
 
 .buttons {
