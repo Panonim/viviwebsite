@@ -56,6 +56,7 @@ position: relative;
               0 0 50px rgb(0,140,255),
               0 0 100px rgb(0,140,255);
 }
+
 .button1 {
 left: 25%;
   position: relative;
@@ -69,20 +70,4 @@ left: 25%;
   display: linear-block;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* styl dla małych ekranów */
-@media only screen and (max-width: 600px) {
-  button {
-    font-size: 12px;
-    margin: 5px;
-  }
-}
-
-/* styl dla średnich ekranów */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  button {
-    font-size: 16px;
-    margin: 10px;
-  }
 }
