@@ -4,6 +4,10 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
+::selection {
+  color: #00ff90;
+}
+
 .text1 {
   text-align: center;
   color: white;
