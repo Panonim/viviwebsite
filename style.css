@@ -2,6 +2,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-family: 'PT Sans', sans-serif;
+  background: #00ff90;
 }
 
 ::selection {
@@ -74,4 +75,16 @@ left: 25%;
   display: linear-block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (min-width: 901px) {
+}
+
+@media only screen and (max-width: 900px) {
+.buttons {
+  height: 150px;
+  width: 200px;
+  margin-right: 50%;
+  margin-top: 10%;
+}
 }
