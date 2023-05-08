@@ -90,6 +90,7 @@ left: 25%;
 .buttons {
   height: 150px;
   width: 200px;
+  position: absolute;
   margin-right: 50%;
   margin-top: 10%;
 }
