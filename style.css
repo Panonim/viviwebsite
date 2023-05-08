@@ -28,6 +28,12 @@ body {
  font-size: 50px;
 }
 
+.secret_text {
+  text-align: center;
+  color: white;
+  font-size: 100px;
+}
+
 .imagevivi {
   border-radius: 50%;
 width: 150px;
