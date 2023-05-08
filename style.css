@@ -92,7 +92,14 @@ left: 25%;
 }
 
 @media only screen and (max-width: 900px) {
-.buttons {
+.button1 {
+  height: 150px;
+  width: 200px;
+  position: absolute;
+  margin-right: 50%;
+  margin-top: 10%;
+}
+.button2 {
   height: 150px;
   width: 200px;
   position: absolute;
