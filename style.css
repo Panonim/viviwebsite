@@ -82,6 +82,11 @@ left: 25%;
   margin-left: auto;
   margin-right: auto;
 }
+.secret_button {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media only screen and (min-width: 901px) {
 }
