@@ -83,9 +83,12 @@ left: 25%;
   margin-right: auto;
 }
 .secret_button {
-  margin-left: auto;
-  margin-right: auto;
-  position: fixed;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media only screen and (min-width: 901px) {
