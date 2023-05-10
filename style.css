@@ -42,6 +42,7 @@ position: relative;
   margin-right: auto;
   display: block;
   visibility: visible;
+  cursor: default;
 }
 .buttons {
   padding: 10px 20px;
