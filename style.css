@@ -90,7 +90,7 @@ left: 25%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
- .secret_text {
+ .secret_link {
        text-decoration: none;
   color: white;
      cursor: default;
