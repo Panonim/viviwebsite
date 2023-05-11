@@ -8,11 +8,6 @@ body {
 ::selection {
   color: #00ff90;
 }
- a {
-       text-decoration: none;
-  color: white;
-     cursor: default;
-}
 
 .text1 {
   text-align: center;
@@ -94,6 +89,11 @@ left: 25%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+ .secret_text {
+       text-decoration: none;
+  color: white;
+     cursor: default;
 }
 
 footer {
