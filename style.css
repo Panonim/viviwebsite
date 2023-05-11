@@ -114,14 +114,14 @@ footer {
 .button1 {
   height: 150px;
   width: 200px;
-  position: absolute;
+  position: static;
   margin-right: 50%;
   margin-top: 10%;
 }
 .button2 {
   height: 150px;
   width: 200px;
-  position: absolute;
+  position: static;
   margin-right: 50%;
   margin-top: 10%;
 }
