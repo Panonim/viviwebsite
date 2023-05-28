@@ -44,6 +44,21 @@ position: relative;
   visibility: visible;
   cursor: default;
 }
+
+.developers_text {
+  text-align: center;
+  color: white;
+  margin: 15px;
+  font-size: 30px;
+}
+
+.bluesignimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
 .buttons {
   padding: 10px 20px;
   border: none;
