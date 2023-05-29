@@ -132,6 +132,10 @@ footer {
 .codeiconfooter {
   width: 66px;
 }
+.mailiconfooter {
+  width: 60px;
+  margin-left: 10px;
+ }
 
 @media only screen and (min-width: 901px) {
 }
