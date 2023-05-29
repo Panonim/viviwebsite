@@ -43,6 +43,25 @@ position: relative;
   display: block;
   visibility: visible;
 }
+.imagevivi_404 {
+width: 150px;
+position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.text1_404 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  margin-top: 10px;
+}
+.text2_404 {
+  text-align: center;
+  color: white;
+  font-size: 65px;
+  margin-top: 30px;
+}
 
 .developers_text {
   text-align: center;
