@@ -11,4 +11,4 @@
 ## Reporting a Vulnerability
 
 Contact with us on our <a href="https://vivibot.online/discord">Discord server</a> or using
-<a href="support@vivibot.online">e-mail</a>
+<a href="mailto:support@vivibot.online">e-mail</a>
