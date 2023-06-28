@@ -2,7 +2,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-family: 'PT Sans', sans-serif;
-  background: #44637f;
+    background-image: linear-gradient(#44637f, #1d3245);
 }
 
 ::selection {
@@ -160,7 +160,10 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
-.button1 {
+body {
+  background: #44637f;
+}  
+  .button1 {
   height: 150px;
   width: 200px;
   position: static;
