@@ -2,7 +2,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-family: 'PT Sans', sans-serif;
-    background-image: linear-gradient(#44637f, #1d3245);
+background-image: linear-gradient(to bottom, #44637f, #3a5670, #304a61, #263e53, #1d3245);
 }
 
 ::selection {
