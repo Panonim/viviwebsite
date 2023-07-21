@@ -1,15 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViVi Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Glitch Text</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #111;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .glitch {
+            position: relative;
+            font-size: 3em;
+            animation: glitch-animation 2s infinite;
+        }
+
+        @keyframes glitch-animation {
+            0% {
+                left: 2px;
+                text-shadow: -1px 0 #00ff00, 1px 0 #ff0000;
+            }
+            25% {
+                left: -2px;
+                text-shadow: -1px 0 #00ff00, 1px 0 #ff0000;
+            }
+            50% {
+                left: 2px;
+                text-shadow: -1px 0 #00ff00, 1px 0 #ff0000;
+            }
+            75% {
+                left: -2px;
+                text-shadow: -1px 0 #00ff00, 1px 0 #ff0000;
+            }
+            100% {
+                left: 0;
+                text-shadow: -1px 0 #00ff00, 1px 0 #ff0000;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="glitch-text">
-        1.10.2023
-    </div>
-    <script src="script.js"></script>
+    <div class="glitch">Glitch Text Effect</div>
 </body>
 </html>
