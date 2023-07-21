@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ViVi Project</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .glitch-text {
+            position: relative;
+            font-size: 3rem;
+        }
+
+        .glitch-text::before,
+        .glitch-text::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(2px, 2px);
+            opacity: 0.8;
+            color: #0f0;
+        }
+
+        .glitch-text::before {
+            animation: glitch 1s infinite linear alternate-reverse;
+        }
+
+        .glitch-text::after {
+            animation: glitch 2s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch {
+            0% {
+                transform: translate(2px, 2px);
+            }
+            25% {
+                transform: translate(-2px, -2px);
+            }
+            50% {
+                transform: translate(2px, -2px);
+            }
+            75% {
+                transform: translate(-2px, 2px);
+            }
+            100% {
+                transform: translate(2px, 2px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glitch-text" data-text="Glitch Text">20.08.2023...</div>
+</body>
+  </html>
 
