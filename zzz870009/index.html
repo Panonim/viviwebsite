@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ViVi Project</title>
+    <title>Countdown to September 1</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(to bottom right, #000000, #008000);
+            background: rgb(0,0,0);
+            background: linear-gradient(225deg, rgba(0,0,0,1) 36%, rgba(0,128,0,1) 100%);
             margin: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
 
         .countdown {
@@ -27,19 +28,43 @@
 
         .countdown span {
             margin: 0 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .separator {
+            width: 2px;
+            height: 30px;
+            background: linear-gradient(to bottom, #00BFFF, #1E90FF);
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
     <div class="countdown" id="countdown">
-        <span id="days"></span>
-        <span id="hours"></span>
-        <span id="minutes"></span>
-        <span id="seconds"></span>
+        <span>
+            <span id="days"></span>
+            <span style="margin-left: 3px">D</span>
+        </span>
+        <div class="separator"></div>
+        <span>
+            <span id="hours"></span>
+            <span style="margin-left: 3px">H</span>
+        </span>
+        <div class="separator"></div>
+        <span>
+            <span id="minutes"></span>
+            <span style="margin-left: 3px">M</span>
+        </span>
+        <div class="separator"></div>
+        <span>
+            <span id="seconds"></span>
+            <span style="margin-left: 3px">S</span>
+        </span>
     </div>
 
     <script>
-        // Funkcja, która oblicza odległość czasu między dwoma datami
+        // Function to calculate time remaining
         function getTimeRemaining(endDate) {
             const totalSeconds = Math.floor((Date.parse(endDate) - Date.now()) / 1000);
             const days = Math.floor(totalSeconds / (3600 * 24));
@@ -54,7 +79,7 @@
             };
         }
 
-        // Funkcja, która aktualizuje licznik na stronie co sekundę
+        // Function to update countdown
         function updateCountdown() {
             const targetDate = new Date("2023-09-01T00:00:00");
             const daysElement = document.getElementById("days");
@@ -68,12 +93,17 @@
             hoursElement.textContent = hours;
             minutesElement.textContent = minutes;
             secondsElement.textContent = seconds;
+
+            if (days < 0) {
+                clearInterval(countdownInterval);
+                window.location.href = "https://example.com";
+            }
         }
 
-        // Aktualizuj licznik co sekundę
-        setInterval(updateCountdown, 1000);
+        // Update countdown every second
+        const countdownInterval = setInterval(updateCountdown, 1000);
 
-        // Wywołaj funkcję po załadowaniu strony
+        // Call the function on page load
         updateCountdown();
     </script>
 </body>
