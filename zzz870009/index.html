@@ -14,18 +14,29 @@
         }
 
         .countdown {
-            font-size: 2em;
+            font-size: 3em;
             color: #fff;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 10px 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .countdown span {
+            margin: 0 5px;
         }
     </style>
 </head>
 <body>
-    <div class="countdown" id="countdown"></div>
+    <div class="countdown" id="countdown">
+        <span id="days"></span>
+        <span id="hours"></span>
+        <span id="minutes"></span>
+        <span id="seconds"></span>
+    </div>
 
     <script>
         // Funkcja, która oblicza odległość czasu między dwoma datami
@@ -46,11 +57,17 @@
         // Funkcja, która aktualizuje licznik na stronie co sekundę
         function updateCountdown() {
             const targetDate = new Date("2023-09-01T00:00:00");
-            const countdownElement = document.getElementById("countdown");
+            const daysElement = document.getElementById("days");
+            const hoursElement = document.getElementById("hours");
+            const minutesElement = document.getElementById("minutes");
+            const secondsElement = document.getElementById("seconds");
 
             const { days, hours, minutes, seconds } = getTimeRemaining(targetDate);
 
-            countdownElement.innerHTML = `${days} dni, ${hours} godzin, ${minutes} minut, ${seconds} sekund.`;
+            daysElement.textContent = days + " dni";
+            hoursElement.textContent = hours + " godz.";
+            minutesElement.textContent = minutes + " min.";
+            secondsElement.textContent = seconds + " sek.";
         }
 
         // Aktualizuj licznik co sekundę
