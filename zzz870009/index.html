@@ -8,13 +8,19 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background: linear-gradient(to bottom right, #000000, #008000);
+            margin: 0;
             font-family: 'Arial', sans-serif;
         }
 
         .countdown {
             font-size: 2em;
-            color: #333;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
         }
     </style>
 </head>
@@ -22,7 +28,7 @@
     <div class="countdown" id="countdown"></div>
 
     <script>
-        
+        // Funkcja, która oblicza odległość czasu między dwoma datami
         function getTimeRemaining(endDate) {
             const totalSeconds = Math.floor((Date.parse(endDate) - Date.now()) / 1000);
             const days = Math.floor(totalSeconds / (3600 * 24));
@@ -36,19 +42,21 @@
                 seconds
             };
         }
- 
+
+        // Funkcja, która aktualizuje licznik na stronie co sekundę
         function updateCountdown() {
             const targetDate = new Date("2023-09-01T00:00:00");
             const countdownElement = document.getElementById("countdown");
 
             const { days, hours, minutes, seconds } = getTimeRemaining(targetDate);
 
-            countdownElement.innerHTML = `Do 1 września pozostało: ${days} dni, ${hours} godzin, ${minutes} minut, ${seconds} sekund.`;
+            countdownElement.innerHTML = `${days} dni, ${hours} godzin, ${minutes} minut, ${seconds} sekund.`;
         }
 
+        // Aktualizuj licznik co sekundę
         setInterval(updateCountdown, 1000);
 
-
+        // Wywołaj funkcję po załadowaniu strony
         updateCountdown();
     </script>
 </body>
