@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Glitch Text</title>
+    <title>ViVi Project</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #111;
+            background-color: #f0f0f0;
             font-family: 'Arial', sans-serif;
-            color: #fff;
-            overflow: hidden;
         }
 
-        .glitch {
-            position: relative;
-            font-size: 3em;
-            animation: glitch-animation 2s infinite;
-        }
-
-        @keyframes glitch-animation {
-            0% {
-                left: 2px;
-                text-shadow: -1px 0 #00ff00, 1px 0 #ff0000;
-            }
-            25% {
-                left: -2px;
-                text-shadow: -1px 0 #00ff00, 1px 0 #ff0000;
-            }
-            50% {
-                left: 2px;
-                text-shadow: -1px 0 #00ff00, 1px 0 #ff0000;
-            }
-            75% {
-                left: -2px;
-                text-shadow: -1px 0 #00ff00, 1px 0 #ff0000;
-            }
-            100% {
-                left: 0;
-                text-shadow: -1px 0 #00ff00, 1px 0 #ff0000;
-            }
+        .countdown {
+            font-size: 2em;
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <div class="glitch">Glitch Text Effect</div>
+    <div class="countdown" id="countdown"></div>
+
+    <script>
+        
+        function getTimeRemaining(endDate) {
+            const totalSeconds = Math.floor((Date.parse(endDate) - Date.now()) / 1000);
+            const days = Math.floor(totalSeconds / (3600 * 24));
+            const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+            const minutes = Math.floor((totalSeconds % 3600) / 60);
+            const seconds = totalSeconds % 60;
+            return {
+                days,
+                hours,
+                minutes,
+                seconds
+            };
+        }
+ 
+        function updateCountdown() {
+            const targetDate = new Date("2023-09-01T00:00:00");
+            const countdownElement = document.getElementById("countdown");
+
+            const { days, hours, minutes, seconds } = getTimeRemaining(targetDate);
+
+            countdownElement.innerHTML = `Do 1 września pozostało: ${days} dni, ${hours} godzin, ${minutes} minut, ${seconds} sekund.`;
+        }
+
+        setInterval(updateCountdown, 1000);
+
+
+        updateCountdown();
+    </script>
 </body>
 </html>
