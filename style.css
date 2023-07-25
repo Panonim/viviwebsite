@@ -1,10 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-family: 'PT Sans', sans-serif;
-  background-image: linear-gradient(to bottom, #44637f, #3a5670, #304a61, #263e53, #1d3245);
-  margin: 0;
-  padding: 0;
-  color: #fff;
+background-image: linear-gradient(to bottom, #44637f, #3a5670, #304a61, #263e53, #1d3245);
 }
 
 ::selection {
@@ -13,61 +10,69 @@ body {
 
 .text1 {
   text-align: center;
+  color: white;
   font-size: 40px;
 }
 
 .text2 {
-  text-align: center;
-  margin: 50px;
-  font-size: 30px;
+ text-align: center;
+ color: white;
+ margin: 50px;
+ font-size: 30px;
 }
-
 .text_end {
-  text-align: center;
-  margin: 100px;
-  font-size: 50px;
+ text-align: center;
+ color: white;
+ margin: 100px;
+ font-size: 50px;
 }
 
 .secret_text {
   text-align: center;
+  color: white;
   font-size: 100px;
 }
 
 .imagevivi {
   border-radius: 50%;
-  width: 150px;
-  margin: 0 auto;
+width: 150px;
+position: relative;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   visibility: visible;
 }
-
 .imagevivi_404 {
   width: 250px;
-  margin: 0 auto;
-  display: block;
-}
-
-.text1_404 {
-  text-align: center;
-  font-size: 55px;
-  margin-top: 10px;
-}
-
-.text2_404 {
-  text-align: center;
-  font-size: 25px;
-  margin-top: 30px;
-}
+  position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .text1_404 {
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    margin-top: 10px;
+  }
+  .text2_404 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+  }
 
 .developers_text {
   text-align: center;
+  color: white;
   margin: 15px;
   font-size: 30px;
 }
 
 .bluesignimg {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 10%;
 }
 
@@ -82,34 +87,46 @@ body {
   text-transform: uppercase;
   transition: 0.5s;
   transition-property: box-shadow;
-  background: rgb(0, 140, 255);
-  box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+
+.buttons {
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
 }
 
 .buttons:hover {
-  box-shadow: 0 0 5px rgb(0, 140, 255),
-              0 0 25px rgb(0, 140, 255),
-              0 0 50px rgb(0, 140, 255),
-              0 0 100px rgb(0, 140, 255);
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
 }
 
-.button1,
+.button1 {
+left: 25%;
+  position: relative;
+  display: linear-block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .button2 {
-  height: 150px;
-  width: 200px;
-  display: block;
-  margin: 10px auto;
+  left: 60%;
+  position: relative;
+  display: linear-block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .secret_button {
-  margin: 10px auto;
-  display: block;
+  margin: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
-.secret_link {
-  text-decoration: none;
+ .secret_link {
+       text-decoration: none;
   color: white;
-  cursor: text;
+     cursor: text;
 }
 
 footer {
@@ -117,7 +134,6 @@ footer {
   text-align: center; 
   padding: 10px; 
 }
-
 .separator {
   height: 5px;
   margin-top: 100px;
@@ -127,23 +143,39 @@ footer {
   border-radius: 10px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
-
 .homeiconfooter {
   width: 50px;
   padding: 10px;
 }
-
 .codeiconfooter {
   width: 66px;
 }
-
 .mailiconfooter {
   width: 60px;
   margin-left: 10px;
+ }
+
+
+@media only screen and (min-width: 1349px) {
 }
 
-@media only screen and (max-width: 768px) {
-  .buttons {
-    width: 150px;
-  }
+@media only screen and (max-width: 1348px) { 
+  .button1 {
+  height: 150px;
+  width: 200px;
+  position: static;
+  margin-right: 50%;
+  margin-top: 10%;
 }
+.button2 {
+  height: 150px;
+  width: 200px;
+  position: static;
+  margin-right: 50%;
+  margin-top: 10%;
+}
+.bluesignimg {
+  width: 50%;
+ }
+}
+
