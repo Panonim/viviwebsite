@@ -64,10 +64,10 @@ body {
   padding-left: 20px;
 }
 .toggle-arrow {
-  position: absolute; /* Ustawienie strzałki */
-  top: 20px; /* Ustawienie położenia górnego */
-  right: 20px; /* Ustawienie położenia prawego */
-  font-size: 24px; /* Rozmiar strzałki */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
 }
 
 
