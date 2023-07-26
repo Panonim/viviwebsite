@@ -15,7 +15,6 @@ body {
   font-size: 32px;
   color: #fff; 
   margin: 0;
-
 }
 
 .feedback-container {
@@ -31,7 +30,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 10px;
+  margin: 10px auto; /* Wycentrowanie poziome zawartości */
   min-width: 250px;
   max-width: 300px;
   cursor: pointer;
@@ -64,6 +63,7 @@ body {
 .change-list {
   padding-left: 20px;
 }
+
 div {
-	color: #fff
+  color: #fff;
 }
