@@ -67,3 +67,10 @@ body {
 div {
   color: #fff;
 }
+  .js-notice {
+    display: none;
+    background-color: #ffeb3b;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+  }
