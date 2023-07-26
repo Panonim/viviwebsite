@@ -1,12 +1,10 @@
-const changelogs = document.querySelectorAll('.changelog');
+// Pobieramy wszystkie elementy o klasie 'feedback-card'
+const feedbackCards = document.querySelectorAll('.feedback-card');
 
-// Dodaj efekty po najechaniu na changelog
-changelogs.forEach(changelog => {
-    changelog.addEventListener('mouseover', () => {
-        changelog.style.transform = 'scale(1.05)';
-    });
-
-    changelog.addEventListener('mouseout', () => {
-        changelog.style.transform = 'scale(1)';
-    });
+// Dodajemy obsługę zdarzenia 'click' dla każdej karty
+feedbackCards.forEach(card => {
+  card.addEventListener('click', () => {
+    // Toggle (zmiana) klasy 'active' dla elementu, po którym kliknięto
+    card.classList.toggle('active');
+  });
 });
