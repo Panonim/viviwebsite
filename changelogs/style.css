@@ -1,47 +1,66 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Kolor tła strony */
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+.header {
+  text-align: center;
+  background-color: #007bff; /* Kolor tła nagłówka */
+  padding: 20px;
 }
 
-header h1 {
-    margin: 0;
+.title {
+  font-size: 32px;
+  color: #fff; /* Kolor tytułu */
+  margin: 0;
+  /* Dodaj wzory graficzne do tytułu */
 }
 
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
-.changelog {
-    background-color: #222;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
+.feedback-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 300px;
+  cursor: pointer;
+  overflow: hidden; /* Dodajemy overflow, aby ukryć zawartość po rozwinięciu */
+  transition: max-height 0.3s ease-in-out; /* Dodajemy animację */
 }
 
-.changelog h2 {
-    color: #007bff;
-    margin-top: 0;
+.version {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.feedback-details {
+  max-height: 0; /* Ukrywamy zawartość na początku */
+  overflow: hidden; /* Dodajemy overflow, aby ukryć zawartość po rozwinięciu */
 }
 
-li {
-    margin-bottom: 5px;
+.feedback-card.active .feedback-details {
+  max-height: 200px; /* Maksymalna wysokość dla rozwiniętej zawartości */
+  padding-top: 10px; /* Odstęp powyżej zawartości po rozwinięciu */
+}
+
+.change-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.change-list {
+  padding-left: 20px;
 }
