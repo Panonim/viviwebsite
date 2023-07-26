@@ -1,19 +1,19 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0; /* Kolor tła strony */
+  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
 }
 
 .header {
   text-align: center;
-  background-color: #007bff; /* Kolor tła nagłówka */
+  background-color: #007bff;
   padding: 20px;
 }
 
 .title {
   font-size: 32px;
-  color: #fff; /* Kolor tytułu */
+  color: #fff;
   margin: 0;
   /* Dodaj wzory graficzne do tytułu */
 }
@@ -35,7 +35,8 @@ body {
   min-width: 250px;
   max-width: 300px;
   cursor: pointer;
-  overflow: hidden; /* Dodajemy overflow, aby ukryć zawartość po rozwinięciu */
+  overflow: hidden;
+  max-height: 60px; /* Nowy początkowy stan wysokości - ukryj zawartość */
   transition: max-height 0.3s ease-in-out; /* Dodajemy animację */
 }
 
@@ -46,13 +47,13 @@ body {
 }
 
 .feedback-details {
-  max-height: 0; /* Ukrywamy zawartość na początku */
-  overflow: hidden; /* Dodajemy overflow, aby ukryć zawartość po rozwinięciu */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out; /* Dodajemy animację dla zawartości */
 }
 
 .feedback-card.active .feedback-details {
-  max-height: 200px; /* Maksymalna wysokość dla rozwiniętej zawartości */
-  padding-top: 10px; /* Odstęp powyżej zawartości po rozwinięciu */
+  max-height: 300px; /* Wysokość po rozwinięciu - dostosuj według potrzeb */
 }
 
 .change-title {
