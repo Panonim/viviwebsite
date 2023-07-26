@@ -63,13 +63,11 @@ body {
 .change-list {
   padding-left: 20px;
 }
-.toggle-arrow {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 24px;
+.date-text {
+  text-align: right;
+  color: rgb(104, 104, 104);
+  font-size: 40px;
 }
-
 
 div {
   color: #fff;
