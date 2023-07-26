@@ -9,9 +9,3 @@ feedbackCards.forEach(card => {
 });
 
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var jsNotice = document.querySelector(".js-notice");
-    jsNotice.style.display = "block"; 
-  });
-</script>
