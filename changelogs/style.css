@@ -18,7 +18,7 @@ body {
 }
 
 .feedback-container {
-  display: flex;
+  display:block;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -31,11 +31,13 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 10px auto; 
-  min-width: 250px;
+  min-width: 300px;
   max-width: 300px;
+  width:300px;
   cursor: pointer;
   overflow: hidden; 
   transition: max-height 0.3s ease-in-out; 
+  margin-bottom: 30px;
 }
 
 .version {
@@ -43,6 +45,7 @@ body {
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 
 .feedback-details {
   max-height: 0; 
@@ -53,6 +56,43 @@ body {
   max-height: 200px; 
   padding-top: 10px;
 }
+
+.openArrow {
+  float: right;
+  visibility: visible;
+  display: inline;
+  text-align: right;
+  margin-left: auto; 
+margin-right: 10px;
+} 
+
+.feedback-card.active .openArrow {
+  visibility: hidden;
+  float: right;
+  display: none;
+  text-align: right;
+  margin-left: auto; 
+margin-right: 10px;
+}
+
+.closeArrow {
+  float: right;
+  visibility:hidden;
+  display: none;
+  text-align: right;
+  margin-left: auto; 
+margin-right: 10px;
+} 
+
+.feedback-card.active .closeArrow {
+  float: right;
+  visibility: visible;
+  display: inline;
+  text-align: right;
+  margin-left: auto; 
+margin-right: 10px;
+}
+
 
 .change-title {
   font-size: 16px;
@@ -71,7 +111,4 @@ body {
 }
 div {
   color: #fff;
-}
-.arrowdown1 {
-
 }
