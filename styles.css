@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Poppins&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+body {
+background-color: #2C2B3C;
+  font-family: 'Tilt Neon', cursive;
+  color: #ebf0ec;
+    text-align: center;
+    overflow: hidden;
+}   
+.title {
+  margin-bottom: 10px;
+  font-size: 55px;
+}
+.logo {
+  max-width: 100px;
+    animation: none;
+}
+
+.header {
+  border-radius: 50px;
+  max-width: 95%;
+  height: 50px;
+            background-color: ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+      margin: 0 auto;
+  margin-top: 25px;
+        }
+.fa-dochub {
+  font-size: 45px;
+}
+.events-dot {
+        height: 40px !important;
+transform: translateY(11%);
+    animation: fadeInOut 3s  infinite;
+}
+.event-text {
+  font-size: 40px;
+}
+
+.halloween-event {
+position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 190px;
+  margin-top: 10px;
+}
+
+.abourdiv {
+   display: none;
+}
+.about {
+  margin-left: 50px;
+  font-size: 25px;
+    margin-top: 20px;
+}
+.abtext {
+    font-size: 25px;
+}
+
+
+
+.button1 {
+  margin-top: 30px;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: rgb(155, 222, 172); 
+  border: 2px solid rgb(155, 222, 172); 
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button1::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  transform: scale(0); 
+  z-index: -1;
+  background-color: rgba(155, 222, 172, 1); 
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button1:hover::before {
+  transform: scale(3); 
+}
+
+.button1:hover {
+  color: #212121;
+  transform: scale(1.1); 
+  box-shadow: 0 0px 20px rgba(53, 114, 102, 1); 
+}
+
+.button1:active {
+  transform: scale(1); 
+}
+
+
+/*Keyframes animations */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
