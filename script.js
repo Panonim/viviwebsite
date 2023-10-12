@@ -1,6 +1,6 @@
 const elementToAnimate = document.querySelector('.logo');
 
-elementToAnimate.addEventListener('mouseenter', () => {
+elementToAnimate.addEventListener('mouseover', () => {
   elementToAnimate.style.animation = 'rotate 2.5s';
   elementToAnimate.style.animationIterationCount = '1'; 
   elementToAnimate.addEventListener('animationend', () => {
