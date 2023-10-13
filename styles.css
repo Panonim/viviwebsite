@@ -127,3 +127,10 @@ position: absolute;
     transform: rotate(360deg);
   }
 }
+
+/*Mobile*/
+@media (max-width: 767px) {
+  .halloween-event {
+    max-width: 200px;
+  }
+}
