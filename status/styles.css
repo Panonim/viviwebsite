@@ -82,4 +82,10 @@
     }
 }
 
+/*Mobile*/
+@media (max-width: 590px) {
+  .container {
+    			width: 250px;
+  }
+}
 
