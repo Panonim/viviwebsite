@@ -59,6 +59,12 @@
             text-decoration: none;
             color:     #ebf0ec;
         }
+		
+		h1 {
+			font-size:20px;
+		color: #94180f;
+		}
+		
 
 /*keyframes*/
 @keyframes pulse {
