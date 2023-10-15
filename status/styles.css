@@ -22,7 +22,6 @@
         .logo {
             margin-bottom: 30px;
                         animation: fadeIn 1s ease-in-out;
-            animation: glow 1s infinite alternate;
         }
 
         .status-title {
