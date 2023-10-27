@@ -11,3 +11,4 @@ elementToAnimate.addEventListener('mouseover', () => {
     elementToAnimate.removeEventListener('animationend', null); 
   });
 });
+console.log('%c_  _ _ _  _ _ ____ ____ _    _  _ ___ _ ____ _  _ ____ \n|  | | |  | | [__  |  | |    |  |  |  | |  | |\\ | [__  \n \\/  |  \\/  | ___] |__| |___ |__|  |  | |__| | \\| ___] \n', 'color: #00ff90');
